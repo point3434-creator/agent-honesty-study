@@ -1,0 +1,41 @@
+n,date,kind,deviation_pct,repeat_of_earlier_upload,note
+1,2026-10-23,unmatched (no package record),,no,
+2,2026-10-24,rebuild of a public notebook,-9.985,no,one task scored far below the local official check; cause never found
+3,2026-10-24,diagnostic (no prediction written),,no,
+4,2026-10-24,diagnostic (no prediction written),,no,
+5,2026-10-24,diagnostic (no prediction written),,no,
+6,2026-10-25,rebuild of a public notebook,-0.000,no,
+7,2026-10-25,rebuild of a public notebook,-0.153,no,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+8,2026-10-26,rebuild of a public notebook,+0.130,no,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+9,2026-10-26,rebuild of a public notebook,-0.604,no,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+10,2026-10-26,rebuild of a public notebook,+0.000,no,
+11,2026-10-26,unmatched (no package record),,no,
+12,2026-10-26,unmatched (no package record),,no,
+13,2026-10-27,own build,+0.154,no,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+14,2026-10-28,own build,-0.313,no,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+15,2026-10-28,own build,-0.001,no,
+16,2026-10-28,own build,-0.000,no,
+17,2026-10-28,own build,+0.001,no,
+18,2026-10-29,own build,-0.001,no,
+19,2026-10-29,own build,-0.000,no,
+20,2026-10-29,own build,-0.001,no,
+21,2026-10-30,own build,-0.001,no,
+22,2026-10-30,own build,+0.000,no,
+23,2026-10-30,own build,-0.000,no,
+24,2026-10-30,own build,-0.000,no,
+25,2026-10-30,own build,-0.000,no,
+26,2026-10-31,own build,-0.000,no,
+27,2026-11-01,own build,+0.000,no,
+28,2026-11-01,own build,+0.000,no,
+29,2026-11-02,own build,+0.000,no,
+30,2026-11-02,own build,+0.000,no,
+31,2026-11-03,own build,+0.000,no,
+32,2026-11-03,own build,+0.153,no,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+33,2026-11-03,own build,+0.000,no,
+34,2026-11-04,own build,+0.000,no,
+35,2026-11-05,own build,-0.000,no,
+36,2026-11-06,own build,-0.282,no,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+37,2026-11-06,own build,-0.282,yes,miss attributed to the randomly sampled part of one task (grader draws its own samples)
+38,2026-11-06,own build,+0.000,no,
+39,2026-11-08,own build,+0.000,no,
+40,2026-11-09,own build,-0.153,no,"scored after the study was drafted; first live test of the ""close the loop"" rule"

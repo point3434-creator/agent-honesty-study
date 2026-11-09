@@ -1,0 +1,29 @@
+id,claim_in_plain_words,direction,basis_of_original_claim,evidence_class,how_it_was_checked,self_corrected_by_same_thread,cost
+K01,A fast proxy predicted that a long GPU run would pass the accuracy line,over,proxy,proxy,the full run (it failed),no,one 10-hour GPU run on a candidate that could not pass
+K02,A fast proxy predicted a run's error; the run passed but with a larger error than predicted,over,proxy,proxy,the full run,no,none
+K03,"A proxy said a variant ""would have passed""; an equal-compute re-check showed the gain came from extra compute",over,proxy (compute-budget confound),proxy,equal-budget re-check; run killed early,yes,about 4 GPU hours
+K04,A preprocessing choice was adopted because the proxy said it lowered error,over,proxy,proxy,the full run; status downgraded twice,no,steered one input choice
+K05,A scheduling tweak was predicted to save 0.3-0.7%,over,proxy noise,proxy,re-test (0.9% worse),no,none
+K06,A layout model predicted a saving of 4 units,over,model estimate,model,exact planner run (saved 1),no,none
+K07,A symmetry trick was estimated to save 3 units,over,model estimate,model,exact recount (at most 1),no,none
+K08,An edge case in an encoding was estimated to be astronomically rare (about 1 in 16 million),over,model estimate,model,exact count: it occurred on every eligible input,no,a parked design would have produced wrong values on most inputs
+K09,A small error term was estimated at 0.146%,over,model estimate,model,same reviewer re-checked: 0.000%,yes,none
+K10,A lower bound on a resource count was stated as 22,over,model estimate (bound),model,a reviewer showed only 19 is rigorous,no,none
+K11,The penalty of a reduced-precision variant was under-estimated by about 20%,over,model estimate,model,other reviewers (erratum by the author),yes,none
+K12,Two parameter settings were estimated to be about equal,over,model estimate,model,measured: one is 1.20x worse at equal effort,no,none
+K13,An early lead of 3.1% in a long optimization was expected to carry,over,early stage of a run,early-run,full run: reversed to 0.9% worse,no,about 21 hours of compute
+K14,A new starting point led by 24% in a short race,over,early stage of a run,early-run,longer chain: worse than the standard start,no,several days of CPU; new rule: judge starts only after several chain stages
+K15,An agent judged that rounding a higher-precision fit would pass,over,agent judgement,judgement,the rounding run (it failed),no,one GPU run
+K16,A submission's score was modeled as a single number though one task is randomly sampled by the grader,over,exact local verifier with a random term treated as fixed,exact-verifier,leaderboard: 0.28% lower,no,a small score loss; the score went unrecorded for 3 days
+K17,An outside proposal's mathematical claims,over,outside proposal,outside,our own computation,n/a,none
+K18,A tie-break probe reported real hits,over,small probe,probe,same thread: an artifact of padding,yes,none
+K19,An outside paper's explanation of a noise source,over,outside paper,outside,not confirmed on our data,n/a,none
+K20,A rebuilt public notebook passed our local official verifier at a given score,over,exact local verifier,exact-verifier,leaderboard: one task about 27% worse (cause never found),no,one upload slot
+K21,An idea was skipped after a probe on two cheap variants,under,small probe,probe,a public notebook later used the idea successfully,no,we adopted it later
+K22,"A compression level was declared ""dead""",under,model estimate at frozen settings,model,it later passed and shipped,no,days of delay on the compression ladder
+K23,Two compression levels were declared no-go (win chance under 10%),under,model and probe on low precision and short fits,model,"reopened; other rungs of the same ladder later passed (one of the two did fail when finally run)",no,as above
+K24,"A compression level was called ""a NO at today's pipeline""",under,one probe route,probe,later passed with a newer pipeline,yes (correction note added),one package delayed
+K25,A technique was benchmarked on one block and parked as too small,under,small benchmark,probe,production: about 3x the benchmark gain,no,adopted later as a default
+K26,"""There is no training distribution for this structure""",under,model estimate,model,measurement: real data looks random,no,none (still parked)
+K27,A cut was estimated to cost about 5x what it really did,under,probe in the wrong coordinate convention,probe,reviewers re-measured in the right convention,no,a whole line of work almost dropped
+K28,A cost was over-estimated because of a clipping bug,under,probe with a bug,probe,corrected check,unknown,none (same round)

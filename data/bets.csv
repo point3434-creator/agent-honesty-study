@@ -1,0 +1,14 @@
+id,date,what_was_predicted,predicting_thread,agent_error,human_error,agent_called,outcome,note
+B01,2026-10-30,error after a relaxation step (lower is better),production,-0.15,-0.10,,,human closer
+B02,2026-10-30,error after rounding (pass line exists),production,-0.05,-0.09,fail,fail,agent called the fail correctly
+B03,2026-10-31,error after rounding a higher-precision fit (pass line exists),production,-0.27,-0.37,pass,fail,called a pass close to the line; it failed
+B04,2026-11-02,error after polishing (lower is better),production,-0.02,-0.22,,,
+B05,2026-11-02,error of a reduced-precision variant (pass line exists),production,+2.52,-5.08,fail,fail,a third bettor (the coordinator agent) was closest; idea already being closed
+B06,2026-11-03,error after a long GPU search (pass line exists),production,+0.08,+0.15,pass,pass,
+B07,2026-11-03,error of a later run (pass line exists; coin-flip bet),review,+0.19,+0.15,pass,pass,
+B08,2026-11-04,final error of an optimizer stage (lower is better),research,+0.02,-0.10,,,
+B09,2026-11-05,error after a long GPU search (pass line exists),production,-0.16,-0.17,pass,pass,a proxy had predicted -0.15
+B10,2026-11-07,error after a long GPU search (pass line exists),production,-0.50,-0.48,pass,fail,called a pass close to the line; it failed; proxy said -0.48 to -0.53
+B11,2026-11-02,error after polishing (lower is better),production,,+0.05,,,not scored: agent number not recorded; human won
+B12,2026-11-08,error after a long GPU search,production,,,,,not scored: run killed early (the proxy behind it had just been doubted)
+B13,2026-11-08,error after a long GPU search,research,,,,,not scored: pending at time of writing
